@@ -1,0 +1,18 @@
+<h1>Contáctanos</h1>
+<p>dirección: Cr 84F #3c 40</p>
+<p>Telefono: 3017075465</p>
+
+
+<%= form_for @welcome, url: ruta_path, method: :post do |f| %>
+  <div>
+    <%= f.label :tittle %>
+    <%= f.text_field :tittle %>
+  </div>
+  <div>
+    <%= f.label :content %>
+    <%= f.text_area :content %>
+  </div>
+  <div>
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,16 @@
+<h1>EDIT</h1>
+<p>formulario de edición</p>
+
+<%= form_for @blog, url: blog_path(@blog), method: :put do |f| %>
+  <div>
+    <%= f.label :tittle %>
+    <%= f.text_field :tittle %>
+  </div>
+  <div>
+    <%= f.label :content %>
+    <%= f.text_area :content %>
+  </div>
+  <div>
+    <%= f.submit %>
+  </div>
+<% end %>
